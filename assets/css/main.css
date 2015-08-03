@@ -125,120 +125,37 @@ a:hover {
     background: #47a3da;
 }
 
-.bp-icon:after {
-    font-family: 'bpicons';
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    text-align: center;
-    color: #47a3da;
-    -webkit-font-smoothing: antialiased;
-}
-
-.container > header nav .bp-icon:after {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    line-height: 2;
-    text-indent: 0;
-}
-
 .container > header nav a:hover:after {
     color: #fff;
 }
 
-.bp-icon-next:after {
-    content: "\e000";
+figure img {
+    width: 150px;
 }
-
-.bp-icon-drop:after {
-    content: "\e001";
-}
-
-.bp-icon-archive:after {
-    content: "\e002";
-}
-
-.bp-icon-about:after {
-    content: "\e003";
-}
-
-.bp-icon-prev:after {
-    content: "\e004";
-}
-
-/* General style */
-.grid-gallery ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.grid-gallery figure {
-    margin: 0;
-}
-
-.grid-gallery figure img {
-    display: block;
-    width: 100%;
-    opacity: 1.0;
-    background-color: #f5f5f5;
-    border: 15px solid #f5f5f5;
-    border-bottom: 0px;
-}
-
-.grid-gallery figcaption h3 {
-    margin: 0;
-    padding: 0 0 0.5em;
-}
-
-.grid-gallery figcaption p {
-    margin: 0;
-}
-
-/* Grid style */
-.grid-wrap {
-    max-width: 69em;
-    margin: 0 auto;
-    padding: 0 1em 1.875em;
+figcaption {
+    width: 120px;
+    margin: auto;
+    text-align: center;
 }
 
 .grid {
+    position: relative;
+    /* fluffy */
     margin: 0 auto;
+    width: 98%;
+    /* end fluffy */
 }
 
-.grid li {
-    width: 20%;
-    /* float: left; */
-    cursor: pointer;
-    align-self: stretch;
-    display: flex;
-}
-
-.grid figure {
-    padding: 15px;
-    -webkit-transition: opacity 0.2s;
-    transition: opacity 0.2s;
-    align-self: stretch;
-    display: flex;
-    flex-direction: column;
-}
-
-.grid li:hover figure {
-    opacity: 0.7;
-}
-
-.grid figcaption {
-    background: #f5f5f5;
-    padding: 25px;
-    align-self: stretch;
-    flex: 1;
+.grid-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* fluffy */
+    /* width: 180px; */
+    /* height: 400px; */
+    border-radius: 8px;
+    background-color: #FDF6E3;
+    /* end fluffy */
 }
 
 @media screen and (max-width: 55em) {
