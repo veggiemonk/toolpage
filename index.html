@@ -120,7 +120,7 @@
                     <img src="assets/logo/Group-S-Online.png" alt="img02"/>
                     <figcaption><h3 style="color: red;">PORTAL SUPPORT</h3>
 
-                      <p>Access Group S application in one place</p></figcaption>
+                      <p>Access Group S application as another user all in one place</p></figcaption>
                   </figure>
                 </a>
               </div>
@@ -195,7 +195,7 @@
                         </figure>
                     </a>
                 </div>
-                <div class="grid-item">
+                <!--<div class="grid-item">
                     <a href="http://sgit01.groups.local:8069/forum/help-1" target="_blank">
                         <figure>
                             <img src="assets/logo/stackoverflow.png" alt="Odoo"/>
@@ -204,14 +204,14 @@
                                 <p>Knowledge sharing and internal communication</p></figcaption>
                         </figure>
                     </a>
-                </div>
+                </div>-->
                 <div class="grid-item">
-                    <a href="http://srhs99.groups.local:10084" target="_blank">
+                    <a href="https://groups-team.slack.com/" target="_blank">
                         <figure>
-                            <img src="assets/logo/letschat.png" alt="letschat"/>
-                            <figcaption><h3 style="color: red;">TEST: Let's Chat</h3>
+                            <img src="assets/logo/slack.svg" alt="Slack"/>
+                            <figcaption><h3>Slack</h3>
 
-                                <p>Supercharged chat application (file upload, rooms, etc.). Slack.io alternative </p></figcaption>
+                                <p>Supercharged chat application (file upload, rooms, etc.)</p></figcaption>
                         </figure>
                     </a>
                 </div>
@@ -226,7 +226,7 @@
                         </figure>
                     </a>
                 </div>
-                <div class="grid-item">
+                <!--<div class="grid-item">
                     <a href="http://srhs99.groups.local:11080" target="_blank">
                         <figure>
                             <img src="assets/logo/kanban.png" alt="kanban"/>
@@ -255,6 +255,17 @@
                                 <p>Edit your documents online</p></figcaption>
                         </figure>
                     </a>
+                </div>-->
+                <div class="grid-item">
+                    <a href="http://srhs99.groups.local:11900" target="_blank">
+                        <figure>
+                            <img src="assets/logo/docker.png" alt="Docker">
+                            <figcaption>
+                                <h3>Docker UI</h3>
+                                <p>Manage Docker container from a browser</p>
+                            </figcaption>
+                        </figure>
+                    </a>
                 </div>
 
             </div>
@@ -278,7 +289,7 @@
             });
         }
 
-        minigrid('.grid', '.grid-item', 10, animate);
+        minigrid('.grid', '.grid-item', 10/*, animate*/);
 
         window.addEventListener('resize', function(){
             minigrid('.grid', '.grid-item');
